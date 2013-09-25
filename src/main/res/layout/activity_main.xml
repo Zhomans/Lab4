@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+        >
+
+    <TextView
+            android:id="@+id/velocity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/velocity_label"
+            android:textSize = "30dp"
+            android:layout_alignParentLeft="true"
+        ></TextView>
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "20dp"
+        android:id="@+id/velocity_display"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/velocity_label"
+        android:layout_alignRight="@+id/velocity_label"></TextView>
+
+    <TextView
+            android:id="@+id/gps_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/gps_label"
+            android:textSize = "30dp"
+            android:layout_alignParentRight="true"
+            ></TextView>
+
+    <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:textSize = "20dp"
+            android:id="@+id/gps_display"
+            android:padding="20dp"
+            android:layout_alignTop="@+id/velocity_display"
+            android:layout_alignRight="@+id/gps_label"
+            android:layout_toRightOf="@+id/pulse_button"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map_button"
+        android:textSize="40dp"
+        android:id="@+id/map_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+
+
+
+
+
