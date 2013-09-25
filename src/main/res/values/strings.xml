@@ -2,19 +2,9 @@
 <resources>
 
     <string name="app_name">Pulse Tag</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="flashlight_button">ON/OFF</string>
-    <string name="open_flashlight">Flashlight</string>
-    <string name="open_camera">Camera</string>
-    <string name="take_picture">Take Picture</string>
-    <string name="new_pic_desc">Latest Picture</string>
-    <string name="refresh_location">Show Coordinates</string>
-    <string name="open_gps">GPS</string>
-    <string name="velocity_label">My Velocity</string>
-    <string name="gps_label">My Location</string>
+    <string name="velocity_label">Movement</string>
+    <string name="location_label">Current Coordinates</string>
     <string name="pulse_button">Pulse</string>
     <string name="map_button">Map</string>
-
 
 </resources>
