@@ -72,7 +72,8 @@ public class SelfActivity extends Activity {
             //Initialize GPS and grab views
             final GPS gps = new GPS(getApplicationContext());
             final TextView velocity = (TextView) findViewById(R.id.velocity_display);
-            final TextView location = (TextView) findViewById(R.id.location_display);
+            final TextView latitude = (TextView) findViewById(R.id.latitude_display);
+            final TextView longitude = (TextView) findViewById(R.id.longitude_display);
             @Override
             public void run(){
                 new AsyncTask<Void, Void, Void>(){
@@ -103,9 +104,11 @@ public class SelfActivity extends Activity {
                         return null;
                     }
                     protected void onProgressUpdate(Void... voids){
-                        location.setText("Lat:" + String.valueOf(curLat) + "\n Long:" + String.valueOf(curLong));
+                        longitude.setText(String.valueOf(curLong));
+                        latitude.setText(String.valueOf(curLat));
                         velocity.setText(String.valueOf(gps_velocity) + " m/s");
-                        location.invalidate();
+                        longitude.invalidate();
+                        latitude.invalidate();
                         velocity.invalidate();
                     }
                 }.execute();

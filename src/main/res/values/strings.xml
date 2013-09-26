@@ -6,7 +6,8 @@
     <string name="location_label">Current Coordinates</string>
     <string name="pulse_button">Pulse</string>
     <string name="map_button">Map</string>
-
+    <string name="latitude">Lat:</string>
+    <string name="longitude">Long:</string>
     <string name="action_settings">Settings</string>
 
 </resources>
